@@ -103,14 +103,14 @@ const config = {
           title: " ",
           items: [
             {
-              label: "Built with ❤️ at GeekyAnts ",
+              label: "Built with ❤️ at CIRES ",
               href:
                 "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Made_with_love&utm_campaign=RN_ARIA",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ReactNativeAria `,
+      copyright: `Copyright © ${new Date().getFullYear()} CIRES `,
     },
   },
   presets: [
@@ -120,12 +120,12 @@ const config = {
         docs: {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/master/`,
           sidebarPath: "./sidebars.js",
         },
         blog: {
           path: "blog",
-          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/master/`,
         },
         theme: {
           customCss: "../src/css/custom.css",
