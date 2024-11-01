@@ -1,0 +1,206 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #4b3ab1;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --ifm-footer-link-hover-color: #fff;
+  --trial-color: rgb(96, 203, 230);
+  /* --ifm-navbar-padding-vertical */
+  /* --ifm-navbar-padding-horizontal: 10rem; */
+  --svg-fill-color: var(--ifm-color-primary);
+}
+.feature_section_padding {
+  padding-bottom: 2rem !important;
+  padding-top: 1rem !important;
+}
+.navbar-sidebar__brand {
+  background-color: var(--ifm-color-primary);
+}
+.navbar__toggle {
+  color: white;
+}
+
+.button.button--secondary.button--outline:not(.button--active):not(:hover) {
+  --ifm-font-color-base: #fff;
+}
+
+.navbar {
+  background-color: var(--ifm-color-primary);
+}
+
+.navbar {
+  --ifm-link-hover-color: #fff;
+  --ifm-navbar-link-color: #fff;
+}
+
+.navbar__inner {
+  --ifm-navbar-link-hover-color: #fff;
+}
+
+.hero--primary {
+  --ifm-hero-text-color: #fff;
+}
+
+.navbar__brand:hover {
+  color: var(--ifm-link-hover-color);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.hero__subtitle--left,
+.hero__title--left {
+  text-align: left;
+}
+
+/* Dark theme overrides */
+html[data-theme="dark"] {
+  --ifm-color-primary: #21232a;
+  --ifm-heading-color: #fff;
+  --ifm-font-color-base: #fff;
+  --ifm-menu-color-active: var(--trial-color);
+  --ifm-link-color: var(--trial-color);
+  --ifm-tabs-color-active: var(--trial-color);
+  --svg-fill-color: #fff;
+}
+
+html[data-theme="dark"] .admonition-heading {
+  --ifm-heading-color: #000;
+}
+
+html[data-theme="dark"] .table-of-contents__link {
+  --ifm-color-primary: var(--trial-color);
+}
+
+html[data-theme="dark"] .navbar__link:hover,
+html[data-theme="dark"] .navbar__link--active {
+  color: var(--trial-color);
+}
+
+.react-toggle-track {
+  background-color: #000 !important;
+}
+
+.navbar__inner {
+  padding: 0 1rem;
+}
+
+.feature-icons {
+  fill: var(--svg-fill-color);
+}
+
+.feature-icons--stroke {
+  stroke: var(--svg-fill-color);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.hover-text-white:hover {
+  color: #fff;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+/* .hero__title {
+  font-size: 2.8rem;
+} */
+.hero-image > img {
+  height: 20rem;
+  width: 20rem;
+  margin-top: 2rem;
+}
+#button {
+  border: none;
+}
+
+@media (max-width: 996px) {
+  .hero-image {
+    margin-top: 2rem;
+  }
+  .hero-image > img {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #gitStarCounterContainer {
+    margin-left: 0px;
+    margin-top: 20px;
+    /* width: 100%; */
+  }
+}
+/* @media screen and (max-width: 769px) {
+  #gitStarCounterInnerDiv {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+  }
+  #gitStarCounterContainer {
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  #gitStarCounterInnerDiv > a {
+    padding: 12px 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+} */
+/* min-width: 175px; */
+/* max-width: 175px; */
+.hero__title {
+  font-size: 2.8em;
+}
+.stargazers {
+  font-size: 20px;
+  color: #fff;
+  padding-left: 15px;
+}
+.gitStarCounterInnerDiv {
+  color: "blue";
+  padding: 0px 0px;
+}
+.gitStarCounterContainer {
+  margin-left: 20px;
+}
+.gitStarCounterInnerDiv > a {
+  padding: 8.1px 25.5px;
+  border-radius: 7px;
+  text-align: center;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 167px;
+  text-transform: none;
+  /* max-width: 175px; */
+}
+.footer__bottom {
+  margin-top: 4rem;
+}
