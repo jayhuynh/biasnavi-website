@@ -1,14 +1,17 @@
-module.exports = {
+const organizationName = "jayhuynh";
+const projectName = "biasnavi-website";
+
+const config = {
   title: "Biasnavi",
   tagline:
     "Biasnavi handles behaviour, accessibility and interactions so you can implement custom components and design systems for Android, iOS and Web",
-  url: "https://react-native-aria.geekyants.com",
-  baseUrl: "/",
+  url: `https://${organizationName}.github.io`,
+  baseUrl: `/${projectName}/`,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "geekyants", // Usually your GitHub org/user name.
-  projectName: "react-native-aria", // Usually your repo name.
+  organizationName, // Usually your GitHub org/user name.
+  projectName, // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Biasnavi",
@@ -30,7 +33,7 @@ module.exports = {
         },
         {
           href:
-            "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Hire_Us&utm_campaign=RN_ARIA",
+            "https://cires.org.au/",
           label: "Hire Us",
           position: "right",
         },
@@ -113,27 +116,16 @@ module.exports = {
   presets: [
     [
       "@docusaurus/preset-classic",
-      // {
-      //   docs: {
-      //     sidebarPath: require.resolve("./sidebars.js"),
-      //     // Please change this to your repo.
-      //     editUrl:
-      //       "https://github.com/CIRES-Hub/BiasNavi-website/tree/main/",
-      //   },
-      //   theme: {
-      //     customCss: require.resolve("./src/css/custom.css"),
-      //   },
-      // },
       {
         docs: {
-          // homePageId: "getting-started",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          path: "./docs",
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
           sidebarPath: "./sidebars.js",
         },
         blog: {
           path: "blog",
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
         theme: {
           customCss: "../src/css/custom.css",
@@ -142,3 +134,5 @@ module.exports = {
     ],
   ],
 };
+
+module.exports = config;
