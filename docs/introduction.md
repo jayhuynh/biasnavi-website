@@ -20,25 +20,26 @@ BiasNavi is a data bias management toolkit developed by [ARC Training Centre for
 
 ## Easy Setup
 1. Run the following command to set up the project for the first time:
-```bash
+```
 make setup
 ```
 2. Config your API key and database URL in the file named `config.sample.yaml` under the root directory of the project and rename it to `config.yaml`
 3. Start the program.
-```bash
+```
 make run
 ```
 
 ## Additional Steps
 To stop database containers, run:
-```bash
+```
 make stop-db
 ```
 To stop and delete database containers, run:
-```bash
+```
 make clean-db
 ```
 To start the database explicitly, run:
-```bash
+```
 make start-db
 ```
+
