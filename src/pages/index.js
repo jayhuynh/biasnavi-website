@@ -224,24 +224,24 @@ const SVGs = {
 
 const features = [
   {
-    title: "Accessible",
+    title: "LLM-Powered",
     imageUrl: "img/accessibility.svg",
-    description: <>Amplify user adoption and experience for your apps</>,
+    description: <>Facilitate your bias management with large language models.</>,
   },
   {
-    title: "Composable",
+    title: "Personalized",
     imageUrl: "img/compose.svg",
-    description: <>Combine components for your specific app needs</>,
+    description: <>Amplify user experience with intelligent personalization system. </>,
   },
   {
-    title: "Consistent",
+    title: "Scalable",
     imageUrl: "img/consistent.svg",
-    description: <>Consistent across Web, Android and iOS</>,
+    description: <>Add new features easily without changing the core system.</>,
   },
   {
     title: "Customisable",
     imageUrl: "img/customisable.svg",
-    description: <>Design implementations are in your hands</>,
+    description: <>Build your own bias management pipline in specific scenarios.</>,
   },
 ];
 
@@ -346,11 +346,7 @@ function Home() {
               </h1>
               <p className="hero__subtitle hero__subtitle--left">
                 Developed by{" "}
-                ARC Training Centre for Information Resilience <a
-                    href="https://cires.org.au/"
-                    target="__blank"
-                    className="text-white hover-text-white text-underline"
-                >CIRES</a>{" "}
+                ARC Training Centre for Information Resilience (CIRES)
               </p>
               <div className={styles.buttons} id={styles.buttons}>
                 <Link
