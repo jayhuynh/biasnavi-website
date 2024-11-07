@@ -1,25 +1,44 @@
 ---
 id: introduction
-title: What is React Native ARIA?
-sidebar_label: What is React Native ARIA?
+title: What is BiasNavi?
+sidebar_label: What is BiasNavi?
 slug: /
 ---
 
-A library of [React Hooks](https://reactjs.org/docs/hooks-intro.html) for react-native web and react-native (Android/iOS) that provides accessible UI primitives for your design system.
+## Introduction
 
-## Motivation
+BiasNavi is a data bias management toolkit developed by [ARC Training Centre for Information Resilience (CIRES)](https://cires.org.au/). It aims to manage the bias in datasets. It complies with the following pipeline:
 
-In a utopian world, we would love a component library that works on all the platforms without limiting its styling, behavior, and accessibility. In reality, this can be a bit tricky.
++ **Identifying**: Identify if the data or system being used is subject to bias or fairness issues.
++ **Measuring**: Quantify with an appropriate metric the magnitude of different types of bias present in the data or system being considered.
++ **Indexing**: Collect, parse, structure, and store bias metadata and fairness policies aimed at facilitating a subsequent fast and effective retrieval and system adaptation.
++ **Surfacing**: Present in an appropriate way to the end user the bias present in the underlying data and/or any fairness policy that have been applied to the data or system under consideration.
++ **Adapting**: Provide the user with a set of tools that allows them to interact with existing biased results and to adapt them for bias in their preferred ways.
 
-With the advent of React Native, it has raised our expectations to build UIs across all platforms while reusing as much code as possible. However, RN ships with a very lean core with a lot of room for customizability. This means that we need to build our primitive components using [View](https://reactnative.dev/docs/view) and [Pressable](https://reactnative.dev/docs/pressable) or create [native views](https://reactnative.dev/docs/native-components-android). This is in contrast to the native development world where component APIs are shipped in the SDKs like [UI Menu in iOS](https://developer.apple.com/documentation/uikit/uimenu).
+## Architecture
+<img src="../asset/img/architecture.png" alt="architecture" width="600">
 
-React Native ARIA aims to solve this by providing low level primitives to create a component or a primitive library that works on all platforms with the scope of React native.
+## Easy Setup
+1. Run the following command to set up the project for the first time:
+```bash
+make setup
+```
+2. Config your API key and database URL in the file named `config.sample.yaml` under the root directory of the project and rename it to `config.yaml`
+3. Start the program.
+```bash
+make run
+```
 
-## Approach
-
-- For web, we've used [React Aria](https://react-spectrum.adobe.com/react-aria/index.html) which provides [ARIA](https://www.w3.org/TR/wai-aria-1.1/) attributes and behaviour (keyboard navigation/Tab focus) for commonly used components.
-- For iOS/Android, we've created similar hooks to those in React Aria but instead of web-supported ARIA/behaviour, it returns [React Native supported accessibility props](https://reactnative.dev/docs/accessibility) whenever possible.
-
-Check out [Adobe Spectrum's architecture](https://react-spectrum.adobe.com/architecture.html) and the below talk by [Devon Govett](https://twitter.com/devongovett).
-
-<iframe src="https://www.youtube.com/embed/dxDcBB7Xoxs" height="400px" width="100%"/>
+## Additional Steps
+To stop database containers, run:
+```bash
+make stop-db
+```
+To stop and delete database containers, run:
+```bash
+make clean-db
+```
+To start the database explicitly, run:
+```bash
+make start-db
+```
