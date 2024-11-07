@@ -17,6 +17,6 @@ BiasNavi is a data bias management toolkit developed by [ARC Training Centre for
 
 ## Architecture
 
-<img src="../asset/img/architecture.png" alt="architecture" width="600" />
+<img src="https://raw.githubusercontent.com/jayhuynh/biasnavi-website/master/asset/img/architecture.png" alt="architecture" width="600" />
 
 
